@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bo {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(90deg, #8bc6ec 0%, #9599e2 100%);
+
+  height: 100vh;
+  width: 100%;
+  color:black;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 20%;
+  flex-direction: column;
+  border-right: 3px solid white;
+  padding: 20px;
+
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  outline: 4px solid white;
+  margin-bottom: 15px;
+}
+.profile-image img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 70px;
+}
+.profile-logout {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+.profile-logout a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.btn-logout img {
+  width: 20px;
+  height: 20px;
+}
+
+/*list*/
+main {
+  height: 100vh;
+  width: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.users-list {
+  position: relative;
+  /*background-color: red;*/
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.list-wrapper {
+  max-width: 100%;
+  margin: 15px;
+}
+.list {
+  list-style: none;
+}
+.list-item {
+
+  border-bottom: 2px solid rgba(142, 187, 234, 0.5);
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-item:first-child {
+  border-top: 2px solid rgba(142, 187, 234, 0.5);
+}
+.list-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  outline: 3.5px solid #8dbbe9;
+}
+.image-container img {
+  flex-shrink: 0;
+  width: 100%;
+
+  height: 50px;
+}
+.pagination {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.1s ease-in-out;
+}
+.pagination a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+.search-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  outline: 1px solid black;
+}
+.search-bar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 60px;
+  background-color: white;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.search-bar a:hover {
+  background-color: black;
+  color: white;
+}
+
+.list-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.list-right:hover i {
+  display: inline-block;
+}
+.list-right i {
+  display: none;
+}
+.list-right a {
+  text-decoration: none;
+  color: black;
+}
+.last-seen {
+  flex-grow: 1;
+  margin-left: 300px;
+}
+.search-bar input {
+  height: 40px;
+  width: 330px;
+  outline: none;
+  border: none;
+  margin-left: 5px;
+  font-size: 16px;
+  border-right: 2px solid #000000;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 16px;
+}
+.consult-users-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+/*information-patient*/
+.information-doc,
+.information-p {
+  flex-grow: 1;
+  margin-top: 60px;
+  margin-left: 30px;
+}

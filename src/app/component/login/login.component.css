@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.form {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.login-form {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.image-form {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #e5f0ff;
+  overflow: hidden;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+h1 {
+  font-size: 45px;
+}
+a {
+  text-decoration: none;
+}
+.welcome {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.txt_field {
+  position: relative;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  margin: 30px 0;
+}
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none; /*none*/
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.txt_field span::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  left: 0;
+  top: 40px;
+  height: 2px;
+  width: 0%;
+  transition: 0.3s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: black;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+.log-in,
+.log-in:hover {
+  text-decoration: none;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+.reset-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reset-password a {
+  color: black;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+.reset-password label {
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 3px;
+}
+.image-form img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+.logo {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  top: 30px;
+  left: 30px;
+  z-index: 100;
+}
+.logo a {
+  color: black;
+  cursor: pointer;
+}

@@ -8,6 +8,7 @@ import { LoginComponent } from './component/login/login.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { PatientComponent } from './component/patient/patient.component';
+import { GraphTestComponent } from './component/graph-test/graph-test.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PatientComponent } from './component/patient/patient.component';
     LoginComponent,
     AboutUsComponent,
     AccueilComponent,
-    PatientComponent
+    PatientComponent,
+    GraphTestComponent
   ],
   imports: [
     BrowserModule,

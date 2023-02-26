@@ -1,3 +1,4 @@
+import { GraphTestComponent } from './component/graph-test/graph-test.component';
 import { PatientComponent } from './component/patient/patient.component';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:"about-us",component:AboutUsComponent},
   {path:"accueil",component:AccueilComponent},
   {path:"patient",component:PatientComponent},
+  {path:"graph-test",component:GraphTestComponent},
 ];
 
 @NgModule({
